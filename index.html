@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>High Class Web | Sites Profissionais de Alta Conversão em 48h</title>
+<meta name="description" content="Desenvolvemos sites de alta conversão para profissionais e empresas. Entrega em 48 horas, estratégico, responsivo e focado em resultados. A partir de R$499.">
+<meta name="keywords" content="criação de sites, landing page, web design, site profissional, alta conversão, marketing digital">
+<link rel="canonical" href="https://highclassweb.com.br/">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://highclassweb.com.br/">
+<meta property="og:title" content="High Class Web | Sites Profissionais em 48h">
+<meta property="og:description" content="Seu site pronto para converter visitantes em clientes em apenas 48 horas. Estratégia e design de elite.">
+<meta property="og:image" content="https://highclassweb.com.br/og-image.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://highclassweb.com.br/">
+<meta property="twitter:title" content="High Class Web | Sites Profissionais em 48h">
+<meta property="twitter:description" content="Seu site pronto para converter visitantes em clientes em apenas 48 horas. Estratégia e design de elite.">
+<meta property="twitter:image" content="https://highclassweb.com.br/og-image.jpg">
+
+<!-- Preconnect for Performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Structured Data (Schema.org) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "High Class Web",
+  "image": "https://highclassweb.com.br/logo.png",
+  "description": "Criação de sites e landing pages de alta conversão em 48 horas.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "São Paulo",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  },
+  "url": "https://highclassweb.com.br/",
+  "telephone": "+5511939329456",
+  "priceRange": "R$499 - R$5000"
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#080808;
+  --bg2:#0e0e0e;
+  --bg3:#131313;
+  --bg4:#181818;
+  --text:#ebebeb;
+  --muted:#5a5a5a;
+  --muted2:#888;
+  --accent:#e85c00;
+  --accent2:#ff7a2e;
+  --accent-dim:rgba(232,92,0,0.1);
+  --accent-glow:rgba(232,92,0,0.3);
+  --border:#1c1c1c;
+  --border2:#252525;
+  --display:'Bebas Neue',sans-serif;
+  --serif:'Instrument Serif',serif;
+  --body:'DM Sans',sans-serif;
+}
+html{scroll-behavior:smooth;overflow-x:hidden;height:100%}
+body{background:var(--bg2);color:var(--text);font-family:var(--body);cursor:none;overflow-x:hidden;margin:0}
+@media(hover:none){body{cursor:auto}}
+
+/* CURSOR */
+#cdot,#cring{position:fixed;pointer-events:none;border-radius:50%;z-index:9999;transform:translate(-50%,-50%);will-change:left,top}
+#cdot{width:5px;height:5px;background:#fff;transition:none}
+#cring{width:28px;height:28px;border:1px solid rgba(232,92,0,0.7);background:transparent;transition:width .18s,height .18s,background .18s,border-color .18s}
+@media(hover:none){#cdot,#cring{display:none}}
+
+/* WHATSAPP */
+#wafloat{
+  position:fixed;bottom:28px;right:28px;z-index:1000;
+  width:56px;height:56px;border-radius:50%;background:#25d366;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 24px rgba(37,211,102,.35);text-decoration:none;
+  transform:translateY(80px);opacity:0;transition:transform .35s ease,opacity .4s,box-shadow .25s;
+}
+#wafloat svg{width:26px;height:26px}
+#wafloat:hover{transform:translateY(0) scale(1.08)!important;box-shadow:0 8px 32px rgba(37,211,102,.6)}
+#wafloat.show{transform:translateY(0);opacity:1}
+@keyframes wapulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.45),0 4px 24px rgba(37,211,102,.35)}70%{box-shadow:0 0 0 16px transparent,0 4px 24px rgba(37,211,102,.35)}100%{box-shadow:0 0 0 0 transparent,0 4px 24px rgba(37,211,102,.35)}}
+#wafloat.pulse{animation:wapulse 2.8s infinite}
+
+/* LAYOUT */
+.wrap{max-width:1160px;margin:0 auto;padding:0 40px}
+@media(max-width:768px){.wrap{padding:0 24px}}
+section{padding:120px 0;border-bottom:1px solid var(--border)}
+@media(max-width:768px){section{padding:80px 0}}
+
+/* NAV */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:500;
+  padding:20px 40px;display:flex;align-items:center;justify-content:space-between;
+  background:rgba(8,8,8,0.85);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+@media(max-width:768px){nav{padding:18px 24px}}
+.logo{font-family:var(--display);font-size:20px;letter-spacing:3px;color:#fff}
+.logo span{color:var(--accent)}
+.nav-right{display:flex;align-items:center;gap:24px}
+.nav-link{font-size:13px;color:var(--muted2);text-decoration:none;letter-spacing:.3px;transition:color .2s}
+.nav-link:hover{color:#fff}
+.nav-cta{
+  padding:10px 22px;background:transparent;color:var(--text);
+  font-family:var(--body);font-size:13px;font-weight:500;letter-spacing:.3px;
+  border:1px solid var(--border2);border-radius:3px;cursor:none;text-decoration:none;
+  transition:border-color .2s,color .2s,background .2s;
+}
+.nav-cta:hover{border-color:var(--accent);color:var(--accent)}
+@media(max-width:600px){.nav-link{display:none}.nav-cta{display:none}}
+
+/* HERO */
+#hero{
+  height:100vh;display:flex;flex-direction:column;justify-content:flex-start;
+  align-items:center;
+  position:relative;overflow:hidden;border-bottom:1px solid var(--border);
+  background:#000;
+}
+#hero-retro-canvas{
+  position:absolute;
+  top:0;left:0;width:100%;height:100%;
+  pointer-events:none;z-index:0;
+  display:block;
+}
+
+
+.hero-content{
+  position:relative;z-index:1;max-width:860px;margin:0 auto;
+  padding:72px 40px 0;
+  text-align:center;
+  width:100%;
+}
+@media(max-width:768px){.hero-content{padding:68px 24px 0}}
+
+.hero-eyebrow{
+  display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:36px;
+  opacity:0;transform:translateY(16px);
+  animation:fadeup .9s cubic-bezier(0.22,1,0.36,1) .2s forwards;
+}
+.hero-eyebrow .line{width:32px;height:1px;background:var(--accent)}
+.hero-eyebrow span{font-size:11px;letter-spacing:4px;color:var(--accent);text-transform:uppercase;font-weight:500}
+
+h1.hero-h1{
+  font-family:var(--display);
+  font-size:clamp(36px,5.5vw,80px);
+  line-height:.93;color:#fff;letter-spacing:-.5px;margin-bottom:0;
+  opacity:1;
+}
+@media(max-width:480px){h1.hero-h1{font-size:clamp(32px,9.5vw,46px)}}
+h1.hero-h1 em{
+  font-family:var(--serif);font-style:italic;
+  color:var(--accent);letter-spacing:0;
+}
+/* typewriter cursor */
+.tw-cursor{
+  display:inline-block;width:3px;background:var(--accent);
+  margin-left:4px;vertical-align:baseline;
+  height:.8em;position:relative;top:.05em;
+  animation:blink .75s step-end infinite;
+}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+.hero-sub{
+  font-size:clamp(15px,1.6vw,18px);font-weight:400;color:var(--text);
+  max-width:560px;line-height:1.7;margin:20px auto 32px;
+  text-shadow:0 2px 12px rgba(0,0,0,0.8);
+  opacity:0;transform:translateY(16px);
+  animation:fadeup .9s cubic-bezier(0.22,1,0.36,1) 3.2s forwards;
+}
+.hero-actions{
+  display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;
+  opacity:0;transform:translateY(16px);
+  animation:fadeup .9s cubic-bezier(0.22,1,0.36,1) 3.5s forwards;
+}
+@keyframes fadeup{to{opacity:1;transform:translateY(0)}}
+
+.btn-primary{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:16px 32px;background:var(--accent);color:#fff;
+  font-family:var(--body);font-size:14px;font-weight:700;letter-spacing:.8px;
+  text-transform:uppercase;border:none;border-radius:3px;cursor:none;text-decoration:none;
+  box-shadow:0 4px 20px rgba(232,92,0,0.25);
+  transition:background .2s,transform .2s,box-shadow .2s;
+}
+.btn-primary:hover{background:var(--accent2);transform:translateY(-2px);box-shadow:0 12px 40px var(--accent-glow)}
+.btn-ghost{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:15px 30px;background:rgba(255,255,255,0.03);
+  font-size:14px;font-weight:500;color:var(--text);text-decoration:none;letter-spacing:.3px;
+  border:1px solid rgba(255,255,255,0.15);border-radius:3px;backdrop-filter:blur(4px);
+  transition:background .2s,border-color .2s,color .2s;cursor:none;
+}
+.btn-ghost:hover{background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.3);color:#fff}
+.btn-ghost svg{width:15px;height:15px;opacity:.8}
+
+
+@keyframes pulse-glow{0%{box-shadow:0 0 0 0 rgba(232,92,0,.4)}70%{box-shadow:0 0 0 12px transparent}100%{box-shadow:0 0 0 0 transparent}}
+
+/* hero stats */
+/* CREDIBILITY BAR */
+#cred{
+  background:var(--bg2);padding:28px 0;border-bottom:1px solid var(--border);
+}
+.cred-inner{
+  display:flex;align-items:center;justify-content:center;gap:48px;flex-wrap:wrap;
+}
+@media(max-width:600px){.cred-inner{gap:28px}}
+.cred-item{display:flex;align-items:center;gap:10px}
+.cred-icon{width:16px;height:16px;color:var(--accent)}
+.cred-text{font-size:13px;color:var(--muted2);letter-spacing:.2px}
+.cred-sep{width:1px;height:20px;background:var(--border2)}
+@media(max-width:480px){.cred-sep{display:none}}
+
+/* PROMISE */
+#promise{background:var(--bg2);padding:0;border-bottom:1px solid var(--border)}
+.promise-grid{display:grid;grid-template-columns:1fr 1fr;background:var(--border);gap:1px}
+.promise-block{background:var(--bg2);padding:80px 64px;display:flex;flex-direction:column;align-items:flex-start}
+@media(max-width:768px){
+  .promise-grid{grid-template-columns:1fr;gap:1px}
+  .promise-block{padding:52px 32px}
+}
+.promise-label-top{font-size:10px;letter-spacing:4px;color:var(--muted);text-transform:uppercase;margin-bottom:20px}
+.promise-num{font-family:var(--display);font-size:clamp(72px,11vw,130px);color:#fff;line-height:1;display:flex;align-items:flex-end;gap:6px}
+.promise-num .unit{font-family:var(--display);font-size:40%;color:var(--accent);margin-bottom:6px}
+.promise-num .prefix{font-family:var(--display);font-size:45%;color:var(--accent);margin-bottom:8px}
+.promise-desc{font-size:15px;color:var(--muted2);margin-top:20px;line-height:1.65;font-weight:300;max-width:280px}
+.promise-footer{
+  text-align:center;padding:40px;font-size:14px;color:var(--muted);
+  line-height:1.7;border-top:1px solid var(--border);
+}
+
+/* SECTION LABELS */
+.section-label{
+  display:flex;align-items:center;gap:12px;margin-bottom:20px;
+}
+.section-label .line{width:24px;height:1px;background:var(--accent)}
+.section-label span{font-size:10px;letter-spacing:4px;color:var(--accent);text-transform:uppercase;font-weight:500}
+.section-title{
+  font-family:var(--display);font-size:clamp(38px,5.5vw,72px);
+  line-height:.95;color:#fff;margin-bottom:16px;
+}
+.section-title em{font-family:var(--serif);font-style:italic;color:var(--accent)}
+.section-sub{font-size:15px;color:var(--muted2);max-width:520px;line-height:1.7;font-weight:300}
+
+/* PROOF — browser frames */
+#proof{overflow:hidden;padding:120px 0}
+@media(max-width:768px){#proof{padding:80px 0}}
+.proof-header{margin-bottom:64px}
+.marquee-wrap{
+  overflow:hidden;position:relative;
+  mask-image:linear-gradient(to right,transparent,black 6%,black 94%,transparent);
+  -webkit-mask-image:linear-gradient(to right,transparent,black 6%,black 94%,transparent);
+}
+.marquee-track{display:flex;gap:28px;width:max-content;animation:marquee 55s linear infinite}
+.marquee-track:hover{animation-play-state:paused}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+.browser-card{
+  width:400px;flex-shrink:0;
+  background:var(--bg3);border:1px solid var(--border2);border-radius:10px;
+  overflow:hidden;cursor:default;
+  transition:border-color .3s,transform .3s,box-shadow .3s;
+}
+.browser-card:hover{border-color:rgba(232,92,0,.4);transform:translateY(-6px);box-shadow:0 20px 48px rgba(0,0,0,.5)}
+.browser-bar{
+  background:#1a1a1a;padding:10px 14px;
+  display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--border);
+}
+.browser-dots{display:flex;gap:5px}
+.browser-dots span{width:8px;height:8px;border-radius:50%}
+.browser-dots span:nth-child(1){background:#ff5f57}
+.browser-dots span:nth-child(2){background:#febc2e}
+.browser-dots span:nth-child(3){background:#28c840}
+.browser-url{
+  flex:1;background:#111;border-radius:4px;
+  padding:4px 10px;font-size:10px;color:var(--muted);
+  font-family:monospace;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.browser-screen{
+  width:100%;background:var(--bg4);
+  position:relative;overflow:hidden;
+}
+.browser-screen img{width:100%;height:auto;display:block}
+/* placeholder when no image */
+.browser-placeholder{
+  width:100%;height:100%;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:8px;
+}
+.browser-placeholder .ph-bar{height:8px;border-radius:4px;background:var(--border2)}
+.browser-placeholder .ph-bar:nth-child(1){width:70%}
+.browser-placeholder .ph-bar:nth-child(2){width:50%}
+.browser-placeholder .ph-bar:nth-child(3){width:60%}
+.browser-placeholder .ph-rect{width:80%;height:60px;background:var(--border2);border-radius:6px;margin-bottom:6px}
+/* animated shimmer on placeholders */
+@keyframes shimmer{0%{opacity:.4}50%{opacity:.8}100%{opacity:.4}}
+.browser-placeholder .ph-bar,.browser-placeholder .ph-rect{animation:shimmer 2s ease infinite}
+.browser-meta{padding:18px 20px;border-top:1px solid var(--border)}
+.browser-client{font-size:11px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin-bottom:6px}
+.browser-result{font-size:15px;font-weight:500;color:var(--text)}
+.browser-result span{color:var(--accent)}
+
+/* WHAT */
+#what{background:var(--bg2)}
+.what-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1px;background:var(--border);margin-top:64px;
+}
+@media(max-width:1024px){.what-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.what-grid{grid-template-columns:1fr}}
+.feat{
+  background:var(--bg2);padding:44px 36px;
+  border-top:1px solid transparent;
+  opacity:0;transform:translateY(24px);
+  transition:opacity .6s ease,transform .6s ease,background .2s,border-top-color .2s;
+}
+.feat.visible{opacity:1;transform:translateY(0)}
+.feat:hover{background:var(--bg3);border-top-color:var(--accent)}
+.feat-icon{margin-bottom:20px;display:block;line-height:0}
+.feat-num{
+  font-family:var(--display);font-size:11px;letter-spacing:3px;
+  color:var(--muted);margin-bottom:28px;display:block;
+}
+.feat-title{font-size:17px;font-weight:600;color:#fff;margin-bottom:12px;line-height:1.3}
+.feat-desc{font-size:13px;line-height:1.75;color:var(--muted2)}
+.feat-arrow{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:11px;letter-spacing:2px;color:var(--accent);text-transform:uppercase;
+  margin-top:24px;
+}
+
+/* PROCESS */
+#process{background:var(--bg)}
+.process-wrap{margin-top:80px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);position:relative}
+@media(max-width:768px){.steps{grid-template-columns:1fr;gap:0}}
+/* connector line desktop */
+.steps::before{
+  content:'';position:absolute;top:20px;left:20px;right:calc(33.33% - 20px);
+  height:1px;background:var(--border2);
+}
+@media(max-width:768px){.steps::before{display:none}}
+.step{
+  padding:0 40px 0 0;
+  opacity:0;transform:translateY(20px);
+}
+@media(max-width:768px){.step{padding:0 0 48px;border-left:1px solid var(--border2);margin-left:40px;padding-left:36px}}
+.step.visible{opacity:1;transform:translateY(0);transition:opacity .6s ease,transform .6s ease}
+.step-dot{
+  width:40px;height:40px;border-radius:50%;
+  background:var(--bg);border:1px solid var(--border2);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--display);font-size:18px;color:var(--muted2);
+  margin-bottom:32px;position:relative;z-index:1;
+  transition:border-color .3s,color .3s;
+}
+.step.visible .step-dot{border-color:var(--accent);color:var(--accent)}
+@media(max-width:768px){
+  .step-dot{position:absolute;left:-20px;top:0;margin-bottom:0;transform:translate(-50%,0)}
+  .step{position:relative}
+}
+.step-title{font-size:16px;font-weight:600;color:#fff;margin-bottom:10px;line-height:1.3}
+.step-desc{font-size:13px;color:var(--muted2);line-height:1.7}
+
+/* TESTIMONIALS */
+
+/* CTA FINAL */
+#cta-final{
+  padding:160px 0;border-bottom:none;
+  background:var(--bg);position:relative;overflow:hidden;text-align:center;
+}
+#cta-final::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 80% 55% at 50% 105%,rgba(232,92,0,0.09),transparent 70%);
+  pointer-events:none;z-index:0;
+}
+#grid-canvas{
+  position:absolute;inset:0;width:100%;height:100%;
+  pointer-events:none;z-index:0;opacity:.55;
+}
+#cta-final .wrap{position:relative;z-index:1}
+.cta-label{font-size:11px;letter-spacing:4px;color:var(--accent);text-transform:uppercase;margin-bottom:24px;display:block}
+.cta-title{
+  font-family:var(--display);font-size:clamp(44px,8vw,100px);
+  color:#fff;line-height:.92;margin-bottom:28px;
+}
+.cta-title em{font-family:var(--serif);font-style:italic;color:var(--accent)}
+.cta-sub{font-size:16px;color:var(--muted2);font-weight:300;margin-bottom:52px;line-height:1.6;max-width:460px;margin-left:auto;margin-right:auto}
+.cta-sub strong{color:var(--text);font-weight:500}
+.btn-cta-main{
+  display:inline-flex;align-items:center;gap:12px;
+  padding:18px 40px;background:var(--accent);color:#fff;
+  font-family:var(--body);font-size:14px;font-weight:600;letter-spacing:.8px;
+  text-transform:uppercase;border:none;border-radius:3px;cursor:none;text-decoration:none;
+  transition:background .2s,transform .2s,box-shadow .2s;
+}
+.btn-cta-main:hover{background:var(--accent2);transform:translateY(-2px);box-shadow:0 16px 48px var(--accent-glow)}
+.cta-note{margin-top:20px;font-size:12px;color:var(--muted);letter-spacing:.5px}
+
+footer{
+  background:var(--bg2);padding:32px 40px;
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;
+  border-top:1px solid var(--border);
+}
+@media(max-width:600px){footer{padding:28px 24px;flex-direction:column;align-items:flex-start;gap:8px}}
+.footer-logo{font-family:var(--display);font-size:16px;letter-spacing:3px;color:var(--muted2)}
+.footer-logo span{color:var(--accent)}
+.footer-note{font-size:12px;color:var(--muted)}
+body>*:last-child{margin-bottom:0}
+</style>
+</head>
+<body>
+
+<div id="cdot"></div>
+<div id="cring"></div>
+
+<a id="wafloat" href="https://wa.me/5511939329456?text=Ol%C3%A1!%20Gostaria%20de%20iniciar%20meu%20projeto%20com%20a%20High%20Class%20Web.%20Como%20funciona%3F" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<nav>
+  <div class="logo">HIGH CLASS <span>WEB</span></div>
+  <div class="nav-right">
+    <a class="nav-link" href="#proof">Projetos</a>
+    <a class="nav-link" href="#what">Serviços</a>
+    <a class="nav-link" href="#process">Processo</a>
+    <a class="nav-cta" href="https://wa.me/5511939329456?text=Ol%C3%A1!%20Gostaria%20de%20iniciar%20meu%20projeto%20com%20a%20High%20Class%20Web.%20Como%20funciona%3F" target="_blank" rel="noopener">Iniciar projeto</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <canvas id="hero-retro-canvas"></canvas>
+  <div class="hero-content" id="hero-content">
+    <h1 class="hero-h1" id="tw-title"></h1>
+    <p class="hero-sub">Criamos sites modernos e estratégicos para negócios que querem atrair mais clientes e crescer com consistência.</p>
+    <div class="hero-actions">
+      <a class="btn-primary" href="https://wa.me/5511939329456?text=Ol%C3%A1!%20Gostaria%20de%20iniciar%20meu%20projeto%20com%20a%20High%20Class%20Web.%20Como%20funciona%3F" target="_blank" rel="noopener">
+        Iniciar meu projeto
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a class="btn-ghost" href="#proof">
+        Ver projetos
+        <svg viewBox="0 0 14 14" fill="none"><path d="M7 2v10M2 7l5 5 5-5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+<section id="promise">
+  <div class="promise-grid">
+    <div class="promise-block">
+      <div class="promise-label-top">Prazo de entrega</div>
+      <div class="promise-num">
+        <span id="cnt-48">0</span>
+        <span class="unit">H</span>
+      </div>
+      <p class="promise-desc">Do primeiro alinhamento ao site publicado. Rápido, direto e sem complicação.</p>
+    </div>
+    <div class="promise-block" style="border-left:1px solid var(--border)">
+      <div class="promise-label-top">Investimento</div>
+      <div style="font-size:11px;letter-spacing:3px;color:var(--muted);text-transform:uppercase;margin-bottom:4px">A partir de</div>
+      <div class="promise-num">
+        <span class="prefix">R$</span>
+        <span id="cnt-499">0</span>
+      </div>
+      <p class="promise-desc">Projetos pensados para negócios que levam presença digital a sério.</p>
+    </div>
+  </div>
+  <div class="promise-footer">
+    Você nos conta sobre seu negócio hoje — em até 48 horas seu site está no ar, pronto para atrair clientes todos os dias.
+  </div>
+</section>
+
+<!-- PROOF -->
+<section id="proof">
+  <div class="wrap proof-header">
+    <div class="section-label"><div class="line"></div><span>Projetos realizados</span></div>
+    <h2 class="section-title">SITES QUE GERAM<br><em>RESULTADOS DE VERDADE.</em></h2>
+    <p class="section-sub" style="margin-top:16px">Atuamos com diversos segmentos — de profissionais autônomos a empresas consolidadas.</p>
+  </div>
+  <div class="marquee-wrap">
+    <div class="marquee-track" id="marquee">
+      <div class="browser-card">
+        <div class="browser-bar">
+          <div class="browser-dots"><span></span><span></span><span></span></div>
+          <div class="browser-url">vitalityimplantes.com.br</div>
+        </div>
+        <div class="browser-screen">
+          <img src="vitality.png" alt="Screenshot do site Vitality Clínica Odontológica - Odontologia de alta performance" loading="lazy">
+        </div>
+        <div class="browser-meta">
+          <div class="browser-client">Vitality Clínica Odontológica</div>
+          <div class="browser-result">Odontologia de <span>alta performance</span></div>
+        </div>
+      </div>
+      <div class="browser-card">
+        <div class="browser-bar">
+          <div class="browser-dots"><span></span><span></span><span></span></div>
+          <div class="browser-url">mafraseguros.com.br</div>
+        </div>
+        <div class="browser-screen">
+          <img src="mafra.png" alt="Screenshot do site Mafra Seguros - Presença digital profissional" loading="lazy">
+        </div>
+        <div class="browser-meta">
+          <div class="browser-client">Mafra Seguros</div>
+          <div class="browser-result"><span>Presença digital</span> profissional</div>
+        </div>
+      </div>
+      <div class="browser-card">
+        <div class="browser-bar">
+          <div class="browser-dots"><span></span><span></span><span></span></div>
+          <div class="browser-url">mastermedicbh.com</div>
+        </div>
+        <div class="browser-screen">
+          <img src="mastermedic.png" alt="Screenshot do site Mastermedic BH - Saúde e credibilidade online" loading="lazy">
+        </div>
+        <div class="browser-meta">
+          <div class="browser-client">Mastermedic BH</div>
+          <div class="browser-result">Saúde e <span>credibilidade</span> online</div>
+        </div>
+      </div>
+      <div class="browser-card">
+        <div class="browser-bar">
+          <div class="browser-dots"><span></span><span></span><span></span></div>
+          <div class="browser-url">madripaesalimentos.com.br</div>
+        </div>
+        <div class="browser-screen">
+          <img src="madripaes.png" alt="Screenshot do site Madri Pães Alimentos - Presença que gera confiança no mercado" loading="lazy">
+        </div>
+        <div class="browser-meta">
+          <div class="browser-client">Congelados para Padaria</div>
+          <div class="browser-result">Presença que <span>gera confiança</span> no mercado</div>
+        </div>
+      </div>
+      <div class="browser-card">
+        <div class="browser-bar">
+          <div class="browser-dots"><span></span><span></span><span></span></div>
+          <div class="browser-url">vanessaxavieradvocacia.com.br</div>
+        </div>
+        <div class="browser-screen">
+          <img src="vanessaxavier.png" alt="Screenshot do site Vanessa Xavier Advocacia - Advocacia com autoridade digital" loading="lazy">
+        </div>
+        <div class="browser-meta">
+          <div class="browser-client">Vanessa Xavier Advocacia</div>
+          <div class="browser-result">Advocacia com <span>autoridade digital</span></div>
+        </div>
+      </div>
+      <div class="browser-card">
+        <div class="browser-bar">
+          <div class="browser-dots"><span></span><span></span><span></span></div>
+          <div class="browser-url">loganfallonadv.site</div>
+        </div>
+        <div class="browser-screen">
+          <img src="loganfallon.png" alt="Screenshot do site Logan Fallon Advocacia - Autoridade digital para o escritório" loading="lazy">
+        </div>
+        <div class="browser-meta">
+          <div class="browser-client">Logan Fallon Advocacia</div>
+          <div class="browser-result">Autoridade digital para o <span>escritório</span></div>
+        </div>
+      </div>
+      <div class="browser-card">
+        <div class="browser-bar">
+          <div class="browser-dots"><span></span><span></span><span></span></div>
+          <div class="browser-url">rodoc.com.br</div>
+        </div>
+        <div class="browser-screen">
+          <img src="rodoc.png" alt="Screenshot do site Rodoc Transportes - Geração de leads qualificados" loading="lazy">
+        </div>
+        <div class="browser-meta">
+          <div class="browser-client">Assessoria em Transportes Rodoviários</div>
+          <div class="browser-result">Geração de <span>leads qualificados</span></div>
+        </div>
+      </div>
+    </div><!-- /marquee-track -->
+  </div>
+</section>
+
+<!-- WHAT -->
+<section id="what">
+  <div class="wrap">
+    <div class="section-label"><div class="line"></div><span>O que entregamos</span></div>
+    <h2 class="section-title">O QUE FAZ SEU SITE<br><em>FUNCIONAR DE VERDADE.</em></h2>
+    <div class="what-grid">
+      <div class="feat">
+        <div class="feat-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="2" y="4" width="24" height="17" rx="2" stroke="#e85c00" stroke-width="1.5"/><path d="M9 21v3M19 21v3M6 24h16" stroke="#e85c00" stroke-width="1.5" stroke-linecap="round"/><path d="M7 10h6M7 14h10" stroke="#e85c00" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </div>
+        <span class="feat-num">01</span>
+        <div class="feat-title">Design estratégico</div>
+        <p class="feat-desc">Cada detalhe do seu site é pensado para gerar confiança e transformar visitantes em clientes.</p>
+      </div>
+      <div class="feat" style="transition-delay:.08s">
+        <div class="feat-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="11" stroke="#e85c00" stroke-width="1.5"/><path d="M14 3C14 3 10 8 10 14s4 11 4 11" stroke="#e85c00" stroke-width="1.4" stroke-linecap="round"/><path d="M14 3c0 0 4 5 4 11s-4 11-4 11" stroke="#e85c00" stroke-width="1.4" stroke-linecap="round"/><path d="M3 14h22" stroke="#e85c00" stroke-width="1.4" stroke-linecap="round"/><path d="M4.5 9h19M4.5 19h19" stroke="#e85c00" stroke-width="1.2" stroke-linecap="round"/></svg>
+        </div>
+        <span class="feat-num">02</span>
+        <div class="feat-title">SEO avançado</div>
+        <p class="feat-desc">Seu site preparado para ser encontrado por quem já está buscando o que você oferece.</p>
+      </div>
+      <div class="feat" style="transition-delay:.16s">
+        <div class="feat-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 20L10 8l5 8 4-5 5 9" stroke="#e85c00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="22" cy="6" r="3" stroke="#e85c00" stroke-width="1.4"/><path d="M22 3v1.5M22 8.5V10M19.3 4.3l1.1 1.1M23.6 7.6l1.1 1.1M18 6h1.5M24.5 6H26M19.3 7.7l1.1-1.1M23.6 4.4l1.1-1.1" stroke="#e85c00" stroke-width="1.2" stroke-linecap="round"/></svg>
+        </div>
+        <span class="feat-num">03</span>
+        <div class="feat-title">Alta performance</div>
+        <p class="feat-desc">Carregamento rápido e experiência fluida em qualquer dispositivo.</p>
+      </div>
+      <div class="feat" style="transition-delay:.24s">
+        <div class="feat-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 22l6-6m0 0l4-8 4 5 3-4 4 5" stroke="#e85c00" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 6H7a2 2 0 00-2 2v12" stroke="#e85c00" stroke-width="1.5" stroke-linecap="round"/><path d="M10 2h11a2 2 0 012 2v14a2 2 0 01-2 2H14" stroke="#e85c00" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <span class="feat-num">04</span>
+        <div class="feat-title">Copywriting incluso</div>
+        <p class="feat-desc">Textos escritos estrategicamente para comunicar valor e aumentar conversão.</p>
+      </div>
+      <div class="feat" style="transition-delay:.32s">
+        <div class="feat-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="3" y="5" width="14" height="18" rx="1.5" stroke="#e85c00" stroke-width="1.5"/><rect x="11" y="9" width="14" height="14" rx="1.5" stroke="#e85c00" stroke-width="1.5"/><path d="M7 10h6M7 14h4M15 13h6M15 17h4" stroke="#e85c00" stroke-width="1.3" stroke-linecap="round"/></svg>
+        </div>
+        <span class="feat-num">05</span>
+        <div class="feat-title">100% responsivo</div>
+        <p class="feat-desc">Funciona perfeitamente no celular, tablet e computador.</p>
+      </div>
+      <div class="feat" style="transition-delay:.4s">
+        <div class="feat-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 3l2.5 5 5.5.8-4 3.9.9 5.5L14 15.5 9.1 18.2l1-5.5L6 8.8l5.5-.8L14 3z" stroke="#e85c00" stroke-width="1.4" stroke-linejoin="round"/><path d="M8 22h12M10 25h8" stroke="#e85c00" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </div>
+        <span class="feat-num">06</span>
+        <div class="feat-title">Estrutura completa</div>
+        <p class="feat-desc">Você recebe um site pronto para usar, publicar e começar a atrair clientes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="wrap">
+    <div class="section-label"><div class="line"></div><span>Como funciona</span></div>
+    <h2 class="section-title">DO ALINHAMENTO<br>AO AR EM <em>3 ETAPAS.</em></h2>
+    <div class="process-wrap">
+      <div class="steps">
+        <div class="step">
+          <div class="step-dot">1</div>
+          <div class="step-title">Alinhamento</div>
+          <p class="step-desc">Entendemos seu negócio, público e objetivo.</p>
+        </div>
+        <div class="step" style="transition-delay:.15s">
+          <div class="step-dot">2</div>
+          <div class="step-title">Desenvolvimento</div>
+          <p class="step-desc">Criamos seu site e ajustamos com você até ficar pronto.</p>
+        </div>
+        <div class="step" style="transition-delay:.3s">
+          <div class="step-dot">3</div>
+          <div class="step-title">Publicação</div>
+          <p class="step-desc">Seu site no ar em até 48h, pronto para gerar resultados.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section id="cta-final">
+  <canvas id="grid-canvas"></canvas>
+  <div class="wrap">
+    <span class="cta-label">Sem esperar mais</span>
+    <h2 class="cta-title">ENQUANTO VOCÊ PENSA,<br>OUTROS NEGÓCIOS ESTÃO<br>SENDO <em>ESCOLHIDOS.</em></h2>
+    <p class="cta-sub">
+      <strong>Seu site pronto em até 48h</strong><br>
+      Projetos a partir de R$499
+    </p>
+    <a class="btn-cta-main" href="https://wa.me/5511939329456?text=Ol%C3%A1!%20Gostaria%20de%20iniciar%20meu%20projeto%20com%20a%20High%20Class%20Web.%20Como%20funciona%3F" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      Falar no WhatsApp agora
+    </a>
+    <p class="cta-note">Resposta rápida&nbsp;•&nbsp;Sem compromisso&nbsp;•&nbsp;Atendimento direto</p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">HIGH CLASS <span>WEB</span></div>
+  <div class="footer-note">© 2025 High Class Web. Todos os direitos reservados.</div>
+</footer>
+
+<script>
+// ── TYPEWRITER ────────────────────────────────────────────
+(function(){
+  const el=document.getElementById('tw-title');
+  if(!el)return;
+
+  // Full text split into segments: {t: text, em: bool}
+  const segments=[
+    {t:'SEU SITE NÃO É SÓ PRESENÇA.\nÉ O QUE FAZ SEU NEGÓCIO\nSER '},
+    {t:'ESCOLHIDO.',em:true},
+  ];
+
+  // Flatten into array of {char, em}
+  const chars=[];
+  segments.forEach(seg=>{
+    seg.t.split('').forEach(ch=>chars.push({ch,em:!!seg.em}));
+  });
+
+  const DELAY=55;
+  let i=0;
+
+  function tick(){
+    if(i>chars.length){return;}
+
+    // Build innerHTML from chars[0..i]
+    let plain='', emText='', html='';
+    let inEm=false;
+
+    for(let k=0;k<i;k++){
+      const c=chars[k];
+      if(c.ch==='\n'){
+        if(inEm){html+=emText+'</em>';emText='';inEm=false;}
+        else{html+=plain;plain='';}
+        html+='<br>';
+      } else if(c.em){
+        if(!inEm){html+=plain;plain='';inEm=true;}
+        emText+=c.ch==='.'?'.':c.ch;
+      } else {
+        if(inEm){html+='<em>'+emText+'</em>';emText='';inEm=false;}
+        plain+=c.ch;
+      }
+    }
+    if(inEm) html+='<em>'+emText+'</em>';
+    else html+=plain;
+
+    // Cursor
+    const done=i>=chars.length;
+    html+=done?'':'<span class="tw-cursor"></span>';
+    el.innerHTML=html;
+
+    if(done)return;
+    i++;
+    setTimeout(tick,DELAY);
+  }
+
+  setTimeout(tick,300);
+})();
+
+// ── CURSOR ────────────────────────────────────────────────
+
+const dot=document.getElementById('cdot'),ring=document.getElementById('cring');
+let mx=innerWidth/2,my=innerHeight/2,rx=mx,ry=my;
+if(window.matchMedia('(hover:hover)').matches){
+  document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px'});
+  (function ac(){rx+=(mx-rx)*.16;ry+=(my-ry)*.16;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(ac)})();
+  document.querySelectorAll('a,button').forEach(el=>{
+    el.addEventListener('mouseenter',()=>{ring.style.width='44px';ring.style.height='44px';ring.style.background='rgba(232,92,0,0.08)';ring.style.borderColor='rgba(232,92,0,0.9)'});
+    el.addEventListener('mouseleave',()=>{ring.style.width='28px';ring.style.height='28px';ring.style.background='transparent';ring.style.borderColor='rgba(232,92,0,0.7)'});
+  });
+}
+
+// ── COUNTERS ─────────────────────────────────────────────
+function animCount(el,target,dur){
+  const s=performance.now();
+  (function u(now){
+    const p=Math.min((now-s)/dur,1),e=1-Math.pow(1-p,3);
+    el.textContent=Math.round(e*target);
+    if(p<1)requestAnimationFrame(u);
+  })(performance.now());
+}
+new IntersectionObserver(entries=>{
+  if(entries[0].isIntersecting){
+    animCount(document.getElementById('cnt-48'),48,1100);
+    animCount(document.getElementById('cnt-499'),499,1300);
+  }
+},{threshold:.3}).observe(document.getElementById('promise'));
+
+// ── MARQUEE ───────────────────────────────────────────────
+const track=document.getElementById('marquee');
+track.innerHTML+=track.innerHTML;
+
+const revObs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')});
+},{threshold:.1});
+document.querySelectorAll('.feat').forEach(el=>revObs.observe(el));
+
+new IntersectionObserver(entries=>{
+  if(entries[0].isIntersecting)
+    document.querySelectorAll('.step').forEach(s=>s.classList.add('visible'));
+},{threshold:.15}).observe(document.getElementById('process'));
+// ── HERO RETRO GRID (optimized) ──────────────────────────
+(function(){
+  const canvas=document.getElementById('hero-retro-canvas');
+  if(!canvas)return;
+  const ctx=canvas.getContext('2d');
+
+  const GRID_COLOR='#e85c00';
+
+  // Pre-compute color once
+  const rgb=(function(hex){
+    const r=/^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    return r?{r:parseInt(r[1],16),g:parseInt(r[2],16),b:parseInt(r[3],16)}:{r:255,g:0,b:255};
+  })(GRID_COLOR);
+
+  let cachedW=0,cachedH=0,skyGrad=null,groundGrad=null,vigGrad=null,fadeGrad=null,scanlineCanvas=null;
+
+  function buildGradients(){
+    if(canvas.width===cachedW&&canvas.height===cachedH)return;
+    cachedW=canvas.width;cachedH=canvas.height;
+
+    skyGrad=ctx.createLinearGradient(0,0,0,cachedH*0.55);
+    skyGrad.addColorStop(0,`rgba(${rgb.r*.05|0},${rgb.g*.05|0},${rgb.b*.15|0},1)`);
+    skyGrad.addColorStop(0.3,`rgba(${rgb.r*.1|0},${rgb.g*.08|0},${rgb.b*.2|0},1)`);
+    skyGrad.addColorStop(0.5,`rgba(${rgb.r*.2|0},${rgb.g*.15|0},${rgb.b*.3|0},1)`);
+    skyGrad.addColorStop(0.7,`rgba(${rgb.r*.35|0},${rgb.g*.25|0},${rgb.b*.4|0},1)`);
+    skyGrad.addColorStop(0.85,`rgba(${rgb.r*.55|0},${rgb.g*.4|0},${rgb.b*.6|0},1)`);
+    skyGrad.addColorStop(1,`rgba(${rgb.r*.7|0},${rgb.g*.5|0},${rgb.b*.75|0},1)`);
+
+    groundGrad=ctx.createLinearGradient(0,cachedH*0.55,0,cachedH);
+    groundGrad.addColorStop(0,`rgba(${rgb.r*.1|0},${rgb.g*.08|0},${rgb.b*.15|0},1)`);
+    groundGrad.addColorStop(0.3,`rgba(${rgb.r*.05|0},${rgb.g*.03|0},${rgb.b*.08|0},1)`);
+    groundGrad.addColorStop(1,'#000');
+
+    vigGrad=ctx.createRadialGradient(cachedW/2,cachedH/2,cachedH*0.3,cachedW/2,cachedH/2,cachedH*0.8);
+    vigGrad.addColorStop(0,'rgba(0,0,0,0)');vigGrad.addColorStop(1,'rgba(0,0,0,0.55)');
+
+    fadeGrad=ctx.createLinearGradient(0,cachedH*0.72,0,cachedH);
+    fadeGrad.addColorStop(0,'rgba(0,0,0,0)');fadeGrad.addColorStop(1,'rgba(0,0,0,1)');
+
+    // Pre-render scanlines to offscreen canvas
+    scanlineCanvas=document.createElement('canvas');
+    scanlineCanvas.width=cachedW;scanlineCanvas.height=cachedH;
+    const sc=scanlineCanvas.getContext('2d');
+    sc.globalAlpha=0.07;sc.fillStyle='#000';
+    for(let y=0;y<cachedH;y+=4)sc.fillRect(0,y,cachedW,2);
+  }
+
+  function resize(){
+    canvas.width=canvas.offsetWidth;
+    canvas.height=canvas.offsetHeight;
+    buildGradients();
+  }
+  resize();
+  window.addEventListener('resize',resize);
+
+  // Reduce grid density for better perf
+  const cellW=120,cellD=80,nW=12,nD=16;
+  const camX=0,camY=60,camZ=400,focal=500;
+  let offset=0;
+  const speed=1.5;
+  let heroActive=true,heroRaf=null;
+
+  function project(x,y,z){
+    const rX=x-camX,rY=y-camY,rZ=z-camZ;
+    if(rZ<=10)return null;
+    const s=focal/rZ;
+    return{x:canvas.width/2+rX*s,y:canvas.height*0.5-rY*s};
+  }
+
+  function drawCell(x,z,zo){
+    const az=z-zo;
+    if(az<-cellD||az>nD*cellD)return;
+    const tl=project(x-cellW/2,0,az);
+    const tr=project(x+cellW/2,0,az);
+    const bl=project(x-cellW/2,0,az+cellD);
+    const br=project(x+cellW/2,0,az+cellD);
+    if(!tl||!tr||!bl||!br)return;
+    if(az<0)return;
+    const df=Math.min(1,az/(nD*cellD));
+    const alpha=Math.max(0.3,1-df*0.7);
+    const lw=Math.max(1,2.5*(1-df*0.5));
+    ctx.lineWidth=lw;
+    ctx.strokeStyle=GRID_COLOR;
+    ctx.globalAlpha=alpha;
+    ctx.beginPath();
+    ctx.moveTo(bl.x,bl.y);ctx.lineTo(br.x,br.y);
+    ctx.lineTo(tr.x,tr.y);ctx.lineTo(tl.x,tl.y);
+    ctx.closePath();ctx.stroke();
+    ctx.globalAlpha=1;
+  }
+
+  function animate(){
+    if(!heroActive){heroRaf=null;return;}
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    buildGradients();
+
+    ctx.fillStyle=skyGrad;
+    ctx.fillRect(0,0,canvas.width,canvas.height*0.55);
+    ctx.fillStyle=groundGrad;
+    ctx.fillRect(0,canvas.height*0.55,canvas.width,canvas.height*0.45);
+
+    offset+=speed;
+    if(offset>=cellD)offset=0;
+
+    const halfW=Math.floor(nW/2);
+    for(let row=-3;row<nD+3;row++){
+      for(let col=-halfW;col<=halfW;col++){
+        drawCell(col*cellW,row*cellD,offset);
+      }
+    }
+
+    // Scanlines from pre-rendered canvas
+    if(scanlineCanvas)ctx.drawImage(scanlineCanvas,0,0);
+
+    ctx.fillStyle=vigGrad;
+    ctx.fillRect(0,0,canvas.width,canvas.height);
+    ctx.fillStyle=fadeGrad;
+    ctx.fillRect(0,canvas.height*0.72,canvas.width,canvas.height*0.28);
+
+    heroRaf=requestAnimationFrame(animate);
+  }
+
+  // Only animate when hero is visible
+  new IntersectionObserver(entries=>{
+    heroActive=entries[0].isIntersecting;
+    if(heroActive&&!heroRaf)heroRaf=requestAnimationFrame(animate);
+  },{threshold:0.05}).observe(canvas.parentElement);
+
+  heroRaf=requestAnimationFrame(animate);
+})();
+
+// ── 3D GRID ───────────────────────────────────────────────
+(function(){
+  const gc=document.getElementById('grid-canvas');
+  if(!gc)return;
+  const gx=gc.getContext('2d');
+  let GW,GH,dpr2=1,active=false,raf=null;
+
+  function gResize(){
+    dpr2=Math.min(window.devicePixelRatio||1,2);
+    GW=gc.offsetWidth;GH=gc.offsetHeight;
+    gc.width=Math.round(GW*dpr2);gc.height=Math.round(GH*dpr2);
+    gx.setTransform(dpr2,0,0,dpr2,0,0);
+  }
+  gResize();
+  window.addEventListener('resize',gResize);
+
+  // Perspective grid: lines converge to vanishing point at center-top
+  // Speed: grid scrolls toward viewer continuously
+  let offset=0;
+  const SPEED=0.6;           // px per frame at base
+  const COLS=10;             // number of vertical lines each side
+  const ROWS=18;             // horizontal lines visible
+  const FOV=0.72;            // controls perspective spread (0–1)
+  const ACCENT=[232,92,0];
+  const WHITE=[255,255,255];
+
+  function lerpColor(a,b,t){
+    return`rgba(${Math.round(a[0]+(b[0]-a[0])*t)},${Math.round(a[1]+(b[1]-a[1])*t)},${Math.round(a[2]+(b[2]-a[2])*t)}`;
+  }
+
+  function drawGrid(ts){
+    if(!active){raf=requestAnimationFrame(drawGrid);return}
+    offset=(offset+SPEED)%(GH/ROWS);
+    gx.clearRect(0,0,GW,GH);
+
+    const vx=GW/2;   // vanishing point x
+    const vy=0;      // vanishing point y (top of section)
+    const horizon=vy;
+    const bottom=GH;
+
+    // ── vertical lines (fan from VP) ──────────────────────
+    // spacing at bottom edge
+    const halfSpread=GW*0.52;
+    for(let i=-COLS;i<=COLS;i++){
+      const bx=vx+i*(halfSpread/COLS);
+      const t=Math.abs(i)/COLS;            // 0=center,1=edge
+      const alpha=0.18-t*0.14;
+      // blend: center more white, edges orange
+      const col=lerpColor(WHITE,ACCENT,t*0.7);
+      gx.beginPath();
+      gx.moveTo(vx,horizon);
+      gx.lineTo(bx,bottom);
+      gx.strokeStyle=col+`,${alpha})`;
+      gx.lineWidth=0.6+t*0.4;
+      gx.stroke();
+    }
+
+    // ── horizontal lines (perspective spacing, scrolling) ──
+    for(let r=0;r<=ROWS+1;r++){
+      // linear t 0→1 from horizon to bottom, offset by scroll
+      const rawT=((r/ROWS)+offset/GH*FOV*2)%1;
+      if(rawT<0)continue;
+
+      // perspective: lines bunch near horizon, spread at bottom
+      const perspT=Math.pow(rawT,1.8);
+      const y=horizon+(bottom-horizon)*perspT;
+      if(y<horizon||y>bottom+2)continue;
+
+      // width of line at this depth (narrows near horizon)
+      const spread=halfSpread*perspT*1.05;
+      const lx=vx-spread, rx=vx+spread;
+
+      // fade out near horizon
+      const alpha=(0.05+perspT*0.18)*(rawT<0.08?rawT/0.08:1);
+      const tCol=perspT*0.5;
+      const col=lerpColor(WHITE,ACCENT,tCol);
+
+      gx.beginPath();
+      gx.moveTo(lx,y);gx.lineTo(rx,y);
+      gx.strokeStyle=col+`,${alpha})`;
+      gx.lineWidth=0.5+perspT*0.7;
+      gx.stroke();
+    }
+
+    // ── glow at VP ────────────────────────────────────────
+    const grd=gx.createRadialGradient(vx,horizon,0,vx,horizon,GW*0.35);
+    grd.addColorStop(0,'rgba(232,92,0,0.07)');
+    grd.addColorStop(1,'rgba(232,92,0,0)');
+    gx.fillStyle=grd;
+    gx.fillRect(0,0,GW,GH);
+
+    raf=requestAnimationFrame(drawGrid);
+  }
+
+  // Only animate when visible
+  new IntersectionObserver(entries=>{
+    active=entries[0].isIntersecting;
+    if(active&&!raf)raf=requestAnimationFrame(drawGrid);
+  },{threshold:0.05}).observe(gc.parentElement);
+
+  raf=requestAnimationFrame(drawGrid);
+})();
+</script>
+</body>
+</html>
