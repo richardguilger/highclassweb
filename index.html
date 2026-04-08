@@ -173,12 +173,12 @@ h1.hero-h1 em{
   max-width:560px;line-height:1.7;margin:20px auto 32px;
   text-shadow:0 2px 12px rgba(0,0,0,0.8);
   opacity:0;transform:translateY(16px);
-  animation:fadeup .9s cubic-bezier(0.22,1,0.36,1) 2.4s forwards;
+  animation:fadeup .9s cubic-bezier(0.22,1,0.36,1) 2.8s forwards;
 }
 .hero-actions{
   display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;
   opacity:0;transform:translateY(16px);
-  animation:fadeup .9s cubic-bezier(0.22,1,0.36,1) 2.7s forwards;
+  animation:fadeup .9s cubic-bezier(0.22,1,0.36,1) 3.1s forwards;
 }
 @keyframes fadeup{to{opacity:1;transform:translateY(0)}}
 
@@ -726,7 +726,7 @@ src="https://www.facebook.com/tr?id=2201265970678415&ev=PageView&noscript=1"
     seg.t.split('').forEach(ch=>chars.push({ch,em:!!seg.em}));
   });
 
-  const DELAY=24;
+  const DELAY=32;
   let i=0;
 
   function tick(){
