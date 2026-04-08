@@ -255,10 +255,14 @@ h1.hero-h1 em{
 @media(max-width:768px){#proof{padding:80px 0}}
 .proof-header{margin-bottom:64px}
 .marquee-wrap{
-  overflow:hidden;position:relative;
+  overflow-x:auto;position:relative;
   mask-image:linear-gradient(to right,transparent,black 6%,black 94%,transparent);
   -webkit-mask-image:linear-gradient(to right,transparent,black 6%,black 94%,transparent);
+  scrollbar-width:none;-ms-overflow-style:none;
+  cursor:grab;
 }
+.marquee-wrap::-webkit-scrollbar{display:none}
+.marquee-wrap:active{cursor:grabbing}
 .marquee-track{display:flex;gap:28px;width:max-content;animation:marquee 55s linear infinite}
 .marquee-track:hover{animation-play-state:paused}
 @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
@@ -795,7 +799,34 @@ new IntersectionObserver(entries=>{
 
 // ── MARQUEE ───────────────────────────────────────────────
 const track=document.getElementById('marquee');
+const wrap=document.querySelector('.marquee-wrap');
 track.innerHTML+=track.innerHTML;
+
+let isDown=false;let startX;let scrollLeft;
+const startDrag=(e)=>{
+  isDown=true;wrap.classList.add('active');
+  startX=(e.pageX||e.touches[0].pageX)-wrap.offsetLeft;
+  scrollLeft=wrap.scrollLeft;
+  track.style.animationPlayState='paused';
+};
+const stopDrag=()=>{
+  isDown=false;wrap.classList.remove('active');
+  track.style.animationPlayState='running';
+};
+const moveDrag=(e)=>{
+  if(!isDown)return;
+  // e.preventDefault(); // removed to allow vertical scroll if needed, but marquee is large
+  const x=(e.pageX||e.touches[0].pageX)-wrap.offsetLeft;
+  const walk=(x-startX)*1.5;
+  wrap.scrollLeft=scrollLeft-walk;
+};
+
+wrap.addEventListener('mousedown',startDrag);
+wrap.addEventListener('touchstart',startDrag,{passive:true});
+window.addEventListener('mouseup',stopDrag);
+window.addEventListener('touchend',stopDrag);
+wrap.addEventListener('mousemove',moveDrag);
+wrap.addEventListener('touchmove',moveDrag,{passive:true});
 
 const revObs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')});
