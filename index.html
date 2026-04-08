@@ -263,9 +263,7 @@ h1.hero-h1 em{
 }
 .marquee-wrap::-webkit-scrollbar{display:none}
 .marquee-wrap:active{cursor:grabbing}
-.marquee-track{display:flex;gap:28px;width:max-content;animation:marquee 55s linear infinite}
-.marquee-track:hover{animation-play-state:paused}
-@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.marquee-track{display:flex;gap:28px;width:max-content}
 
 .browser-card{
   width:400px;flex-shrink:0;
@@ -314,7 +312,7 @@ h1.hero-h1 em{
 /* WHAT */
 #what{background:var(--bg2)}
 .what-grid{
-  display:grid;grid-template-columns:repeat(3,1fr);
+  display:grid;grid-template-columns:repeat(2,1fr);
   gap:1px;background:var(--border);margin-top:64px;
 }
 @media(max-width:1024px){.what-grid{grid-template-columns:repeat(2,1fr)}}
@@ -798,35 +796,63 @@ new IntersectionObserver(entries=>{
 },{threshold:.3}).observe(document.getElementById('promise'));
 
 // ── MARQUEE ───────────────────────────────────────────────
-const track=document.getElementById('marquee');
-const wrap=document.querySelector('.marquee-wrap');
-track.innerHTML+=track.innerHTML;
+(function(){
+  const track=document.getElementById('marquee');
+  const wrap=document.querySelector('.marquee-wrap');
+  if(!track || !wrap) return;
 
-let isDown=false;let startX;let scrollLeft;
-const startDrag=(e)=>{
-  isDown=true;wrap.classList.add('active');
-  startX=(e.pageX||e.touches[0].pageX)-wrap.offsetLeft;
-  scrollLeft=wrap.scrollLeft;
-  track.style.animationPlayState='paused';
-};
-const stopDrag=()=>{
-  isDown=false;wrap.classList.remove('active');
-  track.style.animationPlayState='running';
-};
-const moveDrag=(e)=>{
-  if(!isDown)return;
-  // e.preventDefault(); // removed to allow vertical scroll if needed, but marquee is large
-  const x=(e.pageX||e.touches[0].pageX)-wrap.offsetLeft;
-  const walk=(x-startX)*1.5;
-  wrap.scrollLeft=scrollLeft-walk;
-};
+  track.innerHTML+=track.innerHTML; // Double the content for loop
+  
+  let isDown=false; let startX; let scrollLeft;
+  let scrollPos=0; let speed=0.8;
+  let isHovered=false;
 
-wrap.addEventListener('mousedown',startDrag);
-wrap.addEventListener('touchstart',startDrag,{passive:true});
-window.addEventListener('mouseup',stopDrag);
-window.addEventListener('touchend',stopDrag);
-wrap.addEventListener('mousemove',moveDrag);
-wrap.addEventListener('touchmove',moveDrag,{passive:true});
+  const startDrag=(e)=>{
+    isDown=true; wrap.classList.add('active');
+    startX=(e.pageX||e.touches[0].pageX)-wrap.offsetLeft;
+    scrollLeft=wrap.scrollLeft;
+  };
+  const stopDrag=()=>{
+    isDown=false; wrap.classList.remove('active');
+  };
+  const moveDrag=(e)=>{
+    if(!isDown)return;
+    const x=(e.pageX||e.touches[0].pageX)-wrap.offsetLeft;
+    const walk=(x-startX)*1.5;
+    wrap.scrollLeft=scrollLeft-walk;
+    scrollPos=wrap.scrollLeft; // Sync auto-scroll with manual scroll
+  };
+
+  wrap.addEventListener('mousedown',startDrag);
+  wrap.addEventListener('touchstart',startDrag,{passive:true});
+  window.addEventListener('mouseup',stopDrag);
+  window.addEventListener('touchend',stopDrag);
+  wrap.addEventListener('mousemove',moveDrag);
+  wrap.addEventListener('touchmove',moveDrag,{passive:true});
+
+  wrap.addEventListener('mouseenter',()=>isHovered=true);
+  wrap.addEventListener('mouseleave',()=>isHovered=false);
+
+  function loop(){
+    if(!isDown && !isHovered){
+      scrollPos+=speed;
+      const half=track.scrollWidth/2;
+      if(scrollPos>=half) scrollPos=0;
+      wrap.scrollLeft=scrollPos;
+    } else {
+      // Keep scrollPos synced when user is interacting
+      scrollPos=wrap.scrollLeft;
+      const half=track.scrollWidth/2;
+      if(scrollPos>=half) {
+        scrollPos=0; wrap.scrollLeft=0;
+      } else if(scrollPos<0) {
+        scrollPos=half; wrap.scrollLeft=half;
+      }
+    }
+    requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+})();
 
 const revObs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')});
